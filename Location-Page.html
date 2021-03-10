@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<head>
+  <title>COVID-19 Registration Form</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="backgroundImage"></div>
+  <div class="dataContainer">
+    <div class="imageContainer">
+      <img src="Images/undraw_medical_research_qg4d.svg" class="medicalImage" alt="No Inage Found" />
+      <img src="Images/coronavirus.png" class="covidvirusImage1" alt="No Inage Found" />
+      <img src="Images/coronavirus.png" class="covidvirusImage2" alt="No Inage Found" />
+      <img src="Images/coronavirus.png" class="covidvirusImage3" alt="No Inage Found" />
+      <h3 style='font-size: 1.17em; font-weight: bolder;margin-top: 19px;'>COVID-19</h3>
+      <h5 style="color: gray; font-size: .83em; font-weight: bolder;margin-top: 22px;">Test Registration Form</h5>
+    </div>
+    <div class="locationContainer">
+      <div class="locationInfo">
+        <p style="font-size: 10px; color: gray">TEST FOR FREE</p>
+        <p class='pageInformation'>
+          COVID-19 Testing Centers
+        </p>
+        <div class='locationArea'>
+          <label class='label1'>Testing Location</label><br />
+          <input type="text" name="covidLocation" placeholder="New Delhi" onfocus='this.placeholder=""'
+            onblur='this.placeholder="New Delhi"' class='locationSearch'>
+          <img src="Images/pin.png" alt="No Image Found" class="locationImage" />
+        </div>
+
+        <div class='matchLocation' style="position: absolute;">
+          <div class="card" id='cities' style="width: 18rem; margin-left:1rem; position: absolute;">
+            <ul class="list-group list-group-flush">
+            </ul>
+          </div>
+        </div>
+        <br />
+
+        <div class='centerArea'>
+          <label class='label2'>Testing Centers</label><br />
+          <input type="text" name="covidCenter" placeholder="Connaught Place" onfocus='this.placeholder=""'
+            onblur='this.placeholder="Connaught Place"' class='centerSearch'>
+          <img src="Images/hospital.png" alt="No Image Found" class="centerImage" />
+        </div>
+
+        <div class='matchCenter' style="position: absolute;">
+          <div class="card" id='centers' style="width: 18rem; margin-left:1rem; position: absolute;">
+            <ul class="list-group list-group-flush">
+            </ul>
+          </div>
+        </div>
+        <br />
+
+        <button><a href='Login-Page.html' style="text-decoration: none; color: white;">Next</a></button><br /><br />
+        <p style="font-size: 7.5px; color: gray;margin-top: 8px;">
+          This site is protected by reCAPTCHA and the Google
+        </p>
+        <p style="font-size: 7.5px; color: gray; margin-top:-9px;">
+          <span style="color: #6c63ff">Privacy Policy </span>and
+          <span style="color: #6c63ff">Terms of Service apply</span>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>

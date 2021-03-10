@@ -1,0 +1,43 @@
+[
+    {
+        "city": "Thunder Bay",
+        "centers": [
+            "Thunder Bay Regional Health Sciences Center",
+            "Confederation CollegeAssessment Center"
+        ]
+    },
+    {
+        "city": "Toronto",
+        "centers": [
+            "390 Queen's Quay West - Shoppers Drug Mart",
+            "388 King St. West - Shoppers Drug Mart",
+            "Unity, St. Michael's Hospital",
+            "279 Yonge St. - Shoppers Drug Mart",
+            "Mount Sinai Hospital",
+            "Anishnawbe Health Toronto - Evergreen",
+            "Cecil Community Centre",
+            "UHN Toronto Western Hospital"
+        ]
+    },
+    {
+        "city": "Missisuaga",
+        "centers": [
+            "5425 Creditview Road #1 - Shoppers Drug Mart",
+            "579 Lakeshore Road East - Shoppers Drug Mart",
+            "Extra Mile Pharmacy",
+            "Whole Health Pharmacy (Cooksville)",
+            "5033 Hurontario St. - Shoppers Drug Mart",
+            "6045 Creditview Road - Rexall"
+        ]
+    },
+    {
+        "city": "Brampton",
+        "centers": [
+            "William Osler Health System - Brampton",
+            "160 Main Street South - Shoppers Drug Mart",
+            "545 Steeles Avenue West - Rexall",
+            "Kennedy Medical Plex Pharmacy IDA",
+            "Credit Ridge Remedy’s Rx Pharmacy"
+        ]
+    }
+]
