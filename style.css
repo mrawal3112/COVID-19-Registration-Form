@@ -110,19 +110,19 @@ body {
   font-weight: bold;
 }
 .locationImage {
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   position: absolute;
-  top: 40%;
-  left: 85.5%;
-  opacity: 50%; 
+  top: 33%;
+  left: 85%;
+  opacity: 50%;
 }
 .centerImage {
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   position: absolute;
-  top: 59%;
-  left: 85.5%;
+  top: 52%;
+  left: 85%;
   opacity: 50%;
 }
 

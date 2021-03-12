@@ -4,6 +4,9 @@ const locationMatch = document.querySelector('.matchLocation');
 const centerMatch = document.querySelector('.matchCenter');
 const searchedCity = document.querySelector('#cities');
 const searchedCenter = document.querySelector('#centers');
+const bookingDate = document.querySelector('#bookingDate');
+
+bookingDate.setAttribute('min', new Date().toISOString().split("T")[0]); // setting value of minimum date to today
 
 
 let selectLocation = '';
