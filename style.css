@@ -17,14 +17,14 @@ body {
   display: flex;
   flex-direction: row;
   position: absolute;
-  top: 75px;
-  bottom: 75px;
+  top: 60px;
+  bottom: 60px;
   left: 200px;
   right: 200px;
   border-radius: 25px;
   box-shadow: 2px 5px 36px -13px #000000;
   width: auto;
-  height: 505px;
+  height: 535px;
   margin: auto;
   padding: auto;
   background-color: white;
@@ -92,7 +92,7 @@ body {
   color: gray;
 }
 .locationInfo {
-  margin: 70px 0px 0px 40px;
+  margin: 30px 0px 0px 40px;
   padding: 20px;
 }
 .locationInfo input  {
@@ -113,7 +113,7 @@ body {
   width: 15px;
   height: 15px;
   position: absolute;
-  top: 33%;
+  top: 31%;
   left: 85%;
   opacity: 50%;
 }
@@ -121,7 +121,7 @@ body {
   width: 15px;
   height: 15px;
   position: absolute;
-  top: 52%;
+  top: 49%;
   left: 85%;
   opacity: 50%;
 }
@@ -137,6 +137,7 @@ body {
   outline: none;
   cursor: pointer;
   position: initial;
+  margin-top: 15px;
 }
 
 .pageInformation{
