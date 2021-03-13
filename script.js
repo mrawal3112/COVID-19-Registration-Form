@@ -104,6 +104,9 @@ const searchDate = async () => {
     }
   }
   console.log(availableDates);
+  $(bookingDate).flatpickr({
+    enable: availableDates,
+  });
 }
 
 searchLocation.addEventListener('input', () => searchCity(searchLocation.value));

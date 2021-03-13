@@ -75,8 +75,16 @@ body {
 .medicalImage {
   width: 430px;
   height: 390px;
-  margin-top: 100px;
+  margin-top: 120px;
   margin-left: 25px;
+}
+.loginImage
+{
+    width: 400px;
+    height: 340px;
+    margin-top: 130px;
+    margin-left: 25px;
+
 }
 .locationContainer {
   width: 550px;
@@ -95,6 +103,17 @@ body {
   margin: 30px 0px 0px 40px;
   padding: 20px;
 }
+
+.loginInfo {
+  margin: 80px 0px 0px 40px;
+  padding: 20px;
+}
+
+.registerInfo{
+  margin: 10px 0px 0px 40px;
+  padding: 20px; 
+}
+
 .locationInfo input  {
   width: 80%;
   height: 40px;
@@ -137,7 +156,6 @@ body {
   outline: none;
   cursor: pointer;
   position: initial;
-  margin-top: 15px;
 }
 
 .pageInformation{
@@ -184,18 +202,18 @@ body {
   cursor: pointer;
 }
 .emailImage{
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   position: absolute;
   top: 43.5%;
-  left: 85.5%;
+  left: 88.5%;
   opacity: 50%;
 }
 .passwordImage{
-  width: 25px;
-  height: 25px;
+  width: 15px;
+  height: 15px;
   position: absolute;
   top: 60.5%;
-  left: 85.5%;
+  left: 88.5%;
   opacity: 50%;
 }
