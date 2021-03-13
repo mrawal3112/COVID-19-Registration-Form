@@ -7,7 +7,7 @@ const searchedCenter = document.querySelector('#centers');
 const bookingDate = document.querySelector('#bookingDate');
 const calendar = document.querySelector('.calendar');
 const datafieldClass = document.querySelector('#proceduredateslist');
-
+let availableDates = [];
 
 // bookingDate.setAttribute('min', new Date().toISOString().split("T")[0]); // setting value of minimum date to today
 
@@ -74,6 +74,7 @@ const outputMatches = values => {
             searchedCenter.addEventListener('click', (e) => {
               searchCenter.value = e.target.innerHTML;
               searchedCenter.innerHTML = null;
+              searchDate();
             })
           }
         }
@@ -88,20 +89,22 @@ const outputMatches = values => {
 }
 
 
-// const searchDate = async () => {
-//   const res = await fetch('../data/city.json');
-//   const availDates = await res.json();
-//   for (let m = 0; m < availDates.length; m++) {
-//     if (availDates[m].city === searchLocation.value) {
-//       for (let n = 0; n < availDates[m].dates.length; n++) {
-//         const optionValue = document.createElement('option');
-//         optionValue.value = availDates[m].dates[n];
-//         datafieldClass.append(optionValue);
-//       }
-//     }
-//   }
-// }
+const searchDate = async () => {
+  const res = await fetch('../data/city.json');
+  const availDates = await res.json();
+  for (let m = 0; m < availDates.length; m++) {
+    if (availDates[m].city === searchLocation.value) {
+      for (let j = 0; j < availDates[m].centers.length; j++) {
+        if (availDates[m].centers[j].location === searchCenter.value) {
+          for (let n = 0; n < availDates[m].centers[j].dates.length; n++) {
+            availableDates[n] = availDates[m].centers[j].dates[n];
+          }
+        }
+      }
+    }
+  }
+  console.log(availableDates);
+}
 
 searchLocation.addEventListener('input', () => searchCity(searchLocation.value));
-
 
