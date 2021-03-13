@@ -4,7 +4,7 @@
         "centers": [
             {
                 "location": "Thunder Bay Regional Health Sciences Center",
-                "date": [
+                "dates": [
                     "13-03-2021",
                     "14-03-2021",
                     "20-03-2021",
@@ -15,7 +15,7 @@
             },
             {
                 "location": "Confederation College Assessment Center",
-                "date": [
+                "dates": [
                     "15-03-2021",
                     "18-03-2021",
                     "22-03-2021",
@@ -29,59 +29,115 @@
     {
         "city": "Toronto",
         "centers": [
-            "390 Queen's Quay West - Shoppers Drug Mart",
-            "388 King St. West - Shoppers Drug Mart",
-            "Unity, St. Michael's Hospital",
-            "279 Yonge St. - Shoppers Drug Mart",
-            "Mount Sinai Hospital",
-            "Anishnawbe Health Toronto - Evergreen",
-            "Cecil Community Centre",
-            "UHN Toronto Western Hospital"
-        ],
-        "dates": [
-            "13-03-2021",
-            "14-03-2021",
-            "15-03-2021",
-            "16-03-2021",
-            "17-03-2021",
-            "18-03-2021"
+            {
+                "location": "Mount Sinai Hospital",
+                "dates": [
+                    "13-03-2021",
+                    "14-03-2021",
+                    "15-03-2021",
+                    "16-03-2021",
+                    "17-03-2021",
+                    "18-03-2021"
+                ]
+            },
+            {
+                "location": "388 King St. West - Shoppers Drug Mart",
+                "dates": [
+                    "13-03-2021",
+                    "14-03-2021",
+                    "15-03-2021",
+                    "16-03-2021",
+                    "17-03-2021",
+                    "18-03-2021"
+                ]
+            },
+            {
+                "location": "Unity, St. Michael's Hospital",
+                "dates": [
+                    "13-03-2021",
+                    "14-03-2021",
+                    "15-03-2021",
+                    "16-03-2021",
+                    "17-03-2021",
+                    "18-03-2021"
+                ]
+            }
         ]
     },
     {
         "city": "Missisuaga",
         "centers": [
-            "5425 Creditview Road #1 - Shoppers Drug Mart",
-            "579 Lakeshore Road East - Shoppers Drug Mart",
-            "Extra Mile Pharmacy",
-            "Whole Health Pharmacy (Cooksville)",
-            "5033 Hurontario St. - Shoppers Drug Mart",
-            "6045 Creditview Road - Rexall"
-        ],
-        "dates": [
-            "20-03-2021",
-            "21-03-2021",
-            "22-03-2021",
-            "23-03-2021",
-            "24-03-2021",
-            "25-03-2021"
+            {
+                "location": "5425 Creditview Road #1 - Shoppers Drug Mart",
+                "dates": [
+                    "20-03-2021",
+                    "21-03-2021",
+                    "22-03-2021",
+                    "23-03-2021",
+                    "24-03-2021",
+                    "25-03-2021"
+                ]
+            },
+            {
+                "location": "Extra Mile Pharmacy",
+                "dates": [
+                    "20-03-2021",
+                    "21-03-2021",
+                    "22-03-2021",
+                    "23-03-2021",
+                    "24-03-2021",
+                    "25-03-2021"
+                ]
+            },
+            {
+                "location": "Whole Health Pharmacy (Cooksville)",
+                "dates": [
+                    "20-03-2021",
+                    "21-03-2021",
+                    "22-03-2021",
+                    "23-03-2021",
+                    "24-03-2021",
+                    "25-03-2021"
+                ]
+            }
         ]
     },
     {
         "city": "Brampton",
         "centers": [
-            "William Osler Health System - Brampton",
-            "160 Main Street South - Shoppers Drug Mart",
-            "545 Steeles Avenue West - Rexall",
-            "Kennedy Medical Plex Pharmacy IDA",
-            "Credit Ridge Remedy’s Rx Pharmacy"
-        ],
-        "dates": [
-            "01-04-2021",
-            "02-04-2021",
-            "03-04-2021",
-            "04-04-2021",
-            "05-04-2021",
-            "06-04-2021"
+            {
+                "location": "William Osler Health System",
+                "dates": [
+                    "01-04-2021",
+                    "02-04-2021",
+                    "03-04-2021",
+                    "04-04-2021",
+                    "05-04-2021",
+                    "06-04-2021"
+                ]
+            },
+            {
+                "location": "545 Steeles Avenue West - Rexall",
+                "dates": [
+                    "01-04-2021",
+                    "02-04-2021",
+                    "03-04-2021",
+                    "04-04-2021",
+                    "05-04-2021",
+                    "06-04-2021"
+                ]
+            },
+            {
+                "location": "Kennedy Medical Plex Pharmacy IDA",
+                "dates": [
+                    "01-04-2021",
+                    "02-04-2021",
+                    "03-04-2021",
+                    "04-04-2021",
+                    "05-04-2021",
+                    "06-04-2021"
+                ]
+            }
         ]
     }
 ]

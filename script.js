@@ -57,19 +57,19 @@ const outputMatches = values => {
           selectCenter = values.find(element => element.city === searchLocation.value)
         }
         const searchedData = Object.values(selectCenter)[1];
-        console.log(searchedData);
+        const searchedinsideData = Object.values(searchedData)[1];
         searchCenter.addEventListener('input', () => citySearch(searchCenter.value));
 
         const citySearch = center => {
           let centerMatches = searchedData.filter(centers => {
             const regex = new RegExp(`^${center}`, 'gi');
-            return centers.match(regex);
+            return centers.location.match(regex);
           });
-          // console.log(centerMatches);
+          console.log(centerMatches);
           searchedCenter.innerHTML = null;
 
           for (i in centerMatches) {
-            const searchedValue = `<li value="${centerMatches[i]}" id='${centerMatches[i]}' class='centerSearched'>${centerMatches[i]}</li>`;
+            const searchedValue = `<li value="${centerMatches[i].location}" id='${centerMatches[i].location}' class='centerSearched'>${centerMatches[i].location}</li>`;
             searchedCenter.innerHTML += searchedValue;
             searchedCenter.addEventListener('click', (e) => {
               searchCenter.value = e.target.innerHTML;
