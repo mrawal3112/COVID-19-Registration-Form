@@ -2,8 +2,28 @@
     {
         "city": "Thunder Bay",
         "centers": [
-            "Thunder Bay Regional Health Sciences Center",
-            "Confederation CollegeAssessment Center"
+            {
+                "location": "Thunder Bay Regional Health Sciences Center",
+                "date": [
+                    "13-03-2021",
+                    "14-03-2021",
+                    "20-03-2021",
+                    "24-03-2021",
+                    "28-03-2021",
+                    "30-03-2021"
+                ]
+            },
+            {
+                "location": "Confederation College Assessment Center",
+                "date": [
+                    "15-03-2021",
+                    "18-03-2021",
+                    "22-03-2021",
+                    "26-03-2021",
+                    "28-03-2021",
+                    "30-03-2021"
+                ]
+            }
         ]
     },
     {
@@ -17,6 +37,14 @@
             "Anishnawbe Health Toronto - Evergreen",
             "Cecil Community Centre",
             "UHN Toronto Western Hospital"
+        ],
+        "dates": [
+            "13-03-2021",
+            "14-03-2021",
+            "15-03-2021",
+            "16-03-2021",
+            "17-03-2021",
+            "18-03-2021"
         ]
     },
     {
@@ -28,6 +56,14 @@
             "Whole Health Pharmacy (Cooksville)",
             "5033 Hurontario St. - Shoppers Drug Mart",
             "6045 Creditview Road - Rexall"
+        ],
+        "dates": [
+            "20-03-2021",
+            "21-03-2021",
+            "22-03-2021",
+            "23-03-2021",
+            "24-03-2021",
+            "25-03-2021"
         ]
     },
     {
@@ -38,6 +74,14 @@
             "545 Steeles Avenue West - Rexall",
             "Kennedy Medical Plex Pharmacy IDA",
             "Credit Ridge Remedy’s Rx Pharmacy"
+        ],
+        "dates": [
+            "01-04-2021",
+            "02-04-2021",
+            "03-04-2021",
+            "04-04-2021",
+            "05-04-2021",
+            "06-04-2021"
         ]
     }
 ]

@@ -5,8 +5,11 @@ const centerMatch = document.querySelector('.matchCenter');
 const searchedCity = document.querySelector('#cities');
 const searchedCenter = document.querySelector('#centers');
 const bookingDate = document.querySelector('#bookingDate');
+const calendar = document.querySelector('.calendar');
+const datafieldClass = document.querySelector('#proceduredateslist');
 
-bookingDate.setAttribute('min', new Date().toISOString().split("T")[0]); // setting value of minimum date to today
+
+// bookingDate.setAttribute('min', new Date().toISOString().split("T")[0]); // setting value of minimum date to today
 
 
 let selectLocation = '';
@@ -41,7 +44,7 @@ const outputMatches = values => {
     searchedCenter.innerHTML = null
     searchCenter.value = null;
 
-    for (i in values) {
+    for (let i in values) {
       selectLocation = `<li value="${values[i].city}" id='${values[i].city}' class='citySearched'>${values[i].city}</li>`;
       searchedCity.innerHTML += selectLocation;
       searchedCity.addEventListener('click', (e) => {
@@ -50,11 +53,11 @@ const outputMatches = values => {
         searchedCity.innerHTML = null;
         searchCenter.focus();
 
-        for (j in values) {
+        for (let j in values) {
           selectCenter = values.find(element => element.city === searchLocation.value)
         }
         const searchedData = Object.values(selectCenter)[1];
-
+        console.log(searchedData);
         searchCenter.addEventListener('input', () => citySearch(searchCenter.value));
 
         const citySearch = center => {
@@ -62,7 +65,7 @@ const outputMatches = values => {
             const regex = new RegExp(`^${center}`, 'gi');
             return centers.match(regex);
           });
-          console.log(centerMatches);
+          // console.log(centerMatches);
           searchedCenter.innerHTML = null;
 
           for (i in centerMatches) {
@@ -70,7 +73,6 @@ const outputMatches = values => {
             searchedCenter.innerHTML += searchedValue;
             searchedCenter.addEventListener('click', (e) => {
               searchCenter.value = e.target.innerHTML;
-              console.log(e.target.innerHTML)
               searchedCenter.innerHTML = null;
             })
           }
@@ -85,4 +87,21 @@ const outputMatches = values => {
 
 }
 
+
+// const searchDate = async () => {
+//   const res = await fetch('../data/city.json');
+//   const availDates = await res.json();
+//   for (let m = 0; m < availDates.length; m++) {
+//     if (availDates[m].city === searchLocation.value) {
+//       for (let n = 0; n < availDates[m].dates.length; n++) {
+//         const optionValue = document.createElement('option');
+//         optionValue.value = availDates[m].dates[n];
+//         datafieldClass.append(optionValue);
+//       }
+//     }
+//   }
+// }
+
 searchLocation.addEventListener('input', () => searchCity(searchLocation.value));
+
+
